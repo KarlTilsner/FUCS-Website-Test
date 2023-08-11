@@ -58,7 +58,7 @@ input {
 }
 
 input[type="button"] {
-    background-color: var(--colour-teal);
+    background-color: var(--colour-hoodie-blue);
     border-width: 0;
     border-radius: 0.5rem;
 
@@ -175,11 +175,11 @@ input:hover {
 }
 
 .pdf_viewer {
-    width: 75%;
+    width: 60rem;
     height: 75rem;
     margin: auto;
     border: none;
-    padding-bottom: 1rem;
+    margin-bottom: 5rem;
 }
 
 .main_title {
