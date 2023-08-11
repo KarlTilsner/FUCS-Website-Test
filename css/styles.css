@@ -531,22 +531,24 @@ input:hover {
 
 
 
-    
 
 
 
 
-    .computerman_container {
+
+    /* .computerman_container {
         max-height: 30rem;
         margin: auto;
         margin-bottom: 0;
         margin-left: 0;
-    }
+    } */
     
 
     .hero_mobile {
         position: relative;
-        height: 90vh;
+        height: 60vh;
+        min-height: 60rem;
+        max-height: 80rem;
         margin: 1rem;
         margin-bottom: 0;
     }
@@ -565,21 +567,6 @@ input:hover {
         bottom: 0;
         margin-bottom: 1rem;
     }
-
-
-
-
-    .main_title {
-        margin: auto;
-    }
-
-    .sign_up_button {
-        margin: auto;
-    }
-
-
-
-
 }
 
 
