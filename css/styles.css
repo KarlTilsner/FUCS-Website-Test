@@ -179,7 +179,7 @@ input:hover {
     height: 75rem;
     margin: auto;
     border: none;
-    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 .main_title {
@@ -453,8 +453,7 @@ input:hover {
 
 
     .pdf_viewer {
-        width: 90%;
-        height: 50rem;
+        width: 100%;
     }
 
 
