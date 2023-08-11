@@ -1,0 +1,539 @@
+:root {
+    --colour-cyan: #5695a7;
+    --colour-teal: #57bab8;
+    --colour-purple: #524d84;
+    --colour-white: #ffffff;
+    --colour-hoodie-blue: #51648e;
+    --colour-grey: #272826;
+    --colour-lavender: #726394;
+    --colour-orange: #f5856e;
+
+    --colour-offwhite: #F5F5F5;
+
+    --seperator-line: rgba(255, 255, 255, 0.25);
+
+
+    --hover-opacity: 80%;
+    --hover-transition: 100ms ease;
+}
+
+h2.fucs_navbar_logo_text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    z-index: -2;
+    background-image: linear-gradient(180deg, var(--colour-teal), var(--colour-hoodie-blue));
+    background-color: var(--colour-offwhite);
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: 'Open Sans';
+    color: var(--colour-grey);
+    font-size: 1rem;
+}
+
+main {
+    position: relative;
+    background-image: url(../images/NetworkPatternTransparent.png);
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.smalltext {
+    font-size: 1rem;
+}
+
+a {
+    all: unset;
+}
+
+input {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 1rem;
+}
+
+input[type="button"] {
+    background-color: var(--colour-teal);
+    border-width: 0;
+    border-radius: 0.5rem;
+
+    width: 10rem;
+    height: 5rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    transition: var(--hover-transition);
+}
+
+input[type="button"].button_special {
+    background-color: var(--colour-orange);
+    font-size: 2.5rem;
+    width: 21rem;
+}
+
+/* input[type="submit"] {
+    background-color: var(--colour-teal);
+    border-width: 0;
+    border-radius: 0.5rem;
+
+    width: 10rem;
+    height: 5rem;
+
+    font-size: 1.5rem;
+
+    transition: var(--hover-transition);
+}
+
+input[type="submit"].button_special {
+    background-color: var(--colour-orange);
+    width: 21rem;
+    
+} */
+
+input:hover {
+    cursor: pointer;
+    opacity: var(--hover-opacity);
+}
+
+
+
+
+
+.navbar {
+    display: flex;
+    background-color: var(--colour-hoodie-blue);
+    color: var(--colour-white);
+}
+
+.nav_item:first-child {
+    margin-right: auto;
+}
+
+.nav_item:last-child {
+    margin-right: 4rem;
+}
+
+.fucs_navbar_logo_text {
+    font-size: 2rem;
+    margin: auto;
+}
+
+.navbar_logo_container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    pointer-events: none;
+    font-family: 'Audiowide';
+}
+
+.fucs_navbar_logo {
+    height: 6rem;
+}
+
+.navbar_links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav_link {
+    font-weight: bold;
+    transition: var(--hover-transition);
+}
+
+.nav_link:hover {
+    cursor: pointer;
+    opacity: var(--hover-opacity);
+}
+
+
+
+
+
+.centre_content_block {
+    min-height: -webkit-calc(100vh - 7rem);
+    margin: auto;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.additional_content {
+    background-color: var(--colour-purple);
+    color: var(--colour-white);
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin: 1rem;
+    margin-top: 0;
+    border-radius: 0.5rem;
+}
+
+.pdf_viewer {
+    width: 75%;
+    height: 75rem;
+    margin: auto;
+    border: none;
+    padding: 1rem;
+}
+
+.main_title {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Audiowide';
+}
+
+.page_header {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    white-space: nowrap;
+
+    text-align: center;
+    pointer-events: none;
+}
+
+.homepage_club_desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    pointer-events: none;
+    font-weight: 100;
+}
+
+.club_desc {
+    margin: auto;
+    width: 75%;
+
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: var(--seperator-line) 1px solid;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: space-between; */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.flexbox {
+    display: flex;
+    min-height: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flexboxNoWrap {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.homepage_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    width: 25rem;
+    margin: auto;
+    margin-right: 0;
+}
+
+.computerman_container {
+    max-height: 35rem;
+    margin: auto;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.computerman_img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 35rem;
+    bottom: 0;
+}
+
+
+
+
+/* input[type="text"] {
+    all: unset;
+
+    color: #272826;
+
+    border-radius: 0.5rem;
+    background-color: var(--colour-white);
+    padding: 0.5rem;
+    width: 50%;
+
+    transition: var(--hover-transition);
+}
+
+.sign_up_form {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 1rem;
+} */
+
+
+
+
+.footer {
+    background-color: var(--colour-hoodie-blue);
+    padding: 1rem;
+    color: var(--colour-white);
+}
+
+.footer_category_container {
+    margin: auto;
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer_category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.footer_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: var(--hover-transition);
+}
+
+.footer_item:hover {
+    cursor: pointer;
+    opacity: var(--hover-opacity);
+}
+
+.footer_socials_icon {
+    width: 3rem;
+    height: 3rem;   
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(180deg, var(--colour-teal), var(--colour-hoodie-blue));
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--colour-hoodie-blue);
+    border-radius: 0.35rem; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--colour-purple); 
+}
+
+
+
+
+
+
+
+
+
+.desktop_hide {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 200%;
+    }
+
+    .navbar {
+        height: 8rem;
+    }
+
+    .fucs_navbar_logo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .desktop_hide {
+        display: block;
+    }
+
+    .mobile_hide {
+        display: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .flexboxNoWrap {
+        padding: 2rem;
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    .homepage_buttons {
+        padding: 1rem;
+        gap: 3rem;
+        width: 100%;
+        margin: auto;
+    }
+
+    input[type="button"] {
+        background-color: var(--colour-teal);
+        border-radius: 0.5rem;
+    
+        width: 20rem;
+        height: 10rem;
+    
+        font-size: 3rem;
+    
+        transition: var(--hover-transition);
+    }
+    
+    input[type="button"].button_special {
+        background-color: var(--colour-orange);
+        width: 20rem;
+        height: 10rem;
+    }
+
+
+
+    .pdf_viewer {
+        width: 90%;
+        height: 50rem;
+    }
+
+
+
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin-right: 8rem;
+        height: 8rem;
+        
+    }
+
+    .dropdown_trigger:hover {
+        cursor: pointer;
+        opacity: var(--hover-opacity);
+    }
+
+    .dropdown_icon {
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    .dropdown_content {
+        width: 15rem;
+        display: none;
+        position: absolute;
+        background-color: var(--colour-white);
+        z-index: 1;
+        border-radius: 0.5rem;
+    }
+    
+    .dropdown_content a {
+        display: block;
+        padding: 0.25rem 1rem;
+        color: var(--colour-grey);
+    }
+    
+    .dropdown:hover .dropdown_content {
+        display: block;
+    }
+
+    .dropdown_trigger {
+        height: 100%;
+        width: 100%;
+        
+        transition: var(--hover-transition);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .footer_socials_icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 815px) {
+    h2.fucs_navbar_logo_text {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
