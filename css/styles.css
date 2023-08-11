@@ -280,6 +280,11 @@ input:hover {
 
 
 
+
+
+
+
+
 /* input[type="text"] {
     all: unset;
 
@@ -446,8 +451,10 @@ input:hover {
     
     input[type="button"].button_special {
         background-color: var(--colour-orange);
-        width: 20rem;
-        height: 10rem;
+        width: 75%;
+        height: 8rem;
+        font-size: 4rem;
+        border-radius: 50rem;
     }
 
 
@@ -512,6 +519,66 @@ input:hover {
         width: 6rem;
         height: 6rem;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    .computerman_container {
+        max-height: 30rem;
+        margin: auto;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    
+
+    .hero_mobile {
+        position: relative;
+        height: 90vh;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+    
+    .hero_mobile .computerman_img {
+        all: unset;
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        bottom: 0;
+    }
+    
+    .hero_mobile .hero_mobile_button {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        margin-bottom: 1rem;
+    }
+
+
+
+
+    .main_title {
+        margin: auto;
+    }
+
+    .sign_up_button {
+        margin: auto;
+    }
+
+
+
 
 }
 
