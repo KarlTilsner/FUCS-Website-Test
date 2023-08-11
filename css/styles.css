@@ -526,7 +526,17 @@ input:hover {
 
 
 
+    .club_desc {
+        margin: auto;
+        width: 100%;
+    
 
+        margin-top: 1rem;
+        padding: 1rem;
+        padding-top: 1rem;
+        border-top: var(--seperator-line) 1px solid;
+
+    }
 
 
 
