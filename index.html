@@ -24,38 +24,11 @@
     <body>
         <main>
 
-            <div class="navbar">
-                <div class="nav_item navbar_logo_container">
-                    <img class="fucs_navbar_logo" src="images/logo.png"></img>
-                    <div class="fucs_navbar_logo_text mobile_hide">Flinders University<br>Computer Society</div>
-                </div>
+
+            <div id="navbarContainer" style="display: none;"></div>
 
 
-                <!-- <div class="nav_item dropdown desktop_hide">
-                    <div class="dropdown_trigger">
-                        <img class="dropdown_icon" src="images/menu_burger.png">
-                    </div>
-                    
-                    
-                    <div class="dropdown_content">
-                        <div class="nav_link"><a href="index.html"><h3>Home</h3></a></div>
-
-                        <div class="nav_link"><a href="signup.html"><h3>Sign up</h3></a></div>
-    
-                        <div class="nav_link"><a href="events.html"><h3>Events</h3></a></div>
-                    </div>
-                </div> -->
-                
-                
-                <div class="nav_item navbar_links">
-                    <div class="nav_link"><a href="index.html"><div>Home</div></a></div>
-
-                    <div class="nav_link"><a href="signup.html"><div>Sign up</div></a></div>
-
-                    <div class="nav_link"><a href="events.html"><div>Events</div></a></div>
-                </div>
-            </div>
-
+            
 
 
             <div class="mobile_hide">
@@ -163,65 +136,35 @@
 
 
 
-            <div class="footer">
-                <div class="footer_category_container">
-                    
-                    <div class="footer_category">
-                        <div class="footer_title">
-                            <p>computer.society@flinders.edu.au</p>
-                        </div>
-                    </div>
-
-                    <div class="footer_category">
-                        <a class="footer_item" href="index.html"><p>Home</p></a>
-                        <a class="footer_item" href="signup.html"><p>Sign up</p></a>
-                        <a class="footer_item" href="events.html"><p>Events</p></a>
-                        <a class="footer_item" href="constitution.html"><p>Club Constitution</p></a>
-
-                    </div>
-    
-                    <div class="footer_category">   
-                        <div class="footer_item">
-                            <a class="footer_item" href="https://www.linkedin.com/company/flinderscs/"><img class="footer_socials_icon" src="images/logo_linkedin.png">
-                                <div class="mobile_hide">LinkedIn</div>
-                            </a>
-                        </div>
-    
-                        <div class="footer_item">
-                            <a class="footer_item" href="https://www.facebook.com/FlindersCS"><img class="footer_socials_icon" src="images/logo_facebook.png">
-                                <div class="mobile_hide">Facebook</div>
-                            </a>
-                        </div>
-    
-                        <div class="footer_item">
-                            <a class="footer_item" href="https://www.instagram.com/flinderscs/"><img class="footer_socials_icon" src="images/logo_instagram.png">
-                                <div class="mobile_hide">Instagram</div>
-                            </a>
-                        </div>
-    
-                        <div class="footer_item">
-                            <a class="footer_item" href="https://direct.me/flinderscs"><img class="footer_socials_icon" src="images/logo_directme.png">
-                                <div class="mobile_hide">Direct.me</div>
-                            </a>
-                        </div>
-    
-                        <div class="footer_item">
-                            <a class="footer_item" href="https://discord.gg/bgnF5gBXxF"><img class="footer_socials_icon" src="images/logo_discord.png">
-                                <div class="mobile_hide">Discord</div>
-                            </a>
-                        </div>
-                    </div>
-    
-                    <div class="footer_category">
-                        <div class="footer_title">
-                            <p class="smalltext">© 2023 Flinders University Computer Society, All rights reserved.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <div id="footerContainer" style="display: none;"></div>
 
 
         </main>
+
+        <script>
+            async function loadContentAndScroll() {
+                const navbarContainer = document.getElementById('navbarContainer');
+                const footerContainer = document.getElementById('footerContainer');
+        
+                try {
+                    const navbarResponse = await fetch('navbar.html');
+                    const navbarContent = await navbarResponse.text();
+                    navbarContainer.style.display = 'block';
+                    navbarContainer.innerHTML = navbarContent;
+        
+                    const footerResponse = await fetch('footer.html');
+                    const footerContent = await footerResponse.text();
+                    footerContainer.style.display = 'block';
+                    footerContainer.innerHTML = footerContent;
+                } catch (error) {
+                    console.error('Error loading content:', error);
+                }
+        
+                window.scrollTo(0, 0);
+            }
+        
+            document.addEventListener('DOMContentLoaded', loadContentAndScroll);
+        </script>
+
     </body>
 </html>
